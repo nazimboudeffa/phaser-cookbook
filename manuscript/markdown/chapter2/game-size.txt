@@ -1,0 +1,90 @@
+## Quelle est la meilleur taille pour votre jeu
+
+### Problème
+
+Vous voulez créer un jeu et vous ne savez pas comment commencer
+
+### Solution
+
+Vous pouvez comprendre qu'il existe trois tailles de jeux: Petit, Moyen et Grand.
+
+#### Petit jeu
+
+Il est bon d’utiliser la fonctionnalité prototype de javascript pour définir un petit jeu. Plus tard dans ce livre
+nous verrons comment créer un `state`
+
+```
+var game = new Phaser.Game(640, 480);
+var myGame = function () {};
+myGame.prototype = {
+  preload: function () {
+    this.load.image('logo', 'assets/phaser2.png');
+  },
+  create: function () {
+    this.logo = this.add.image(0, 0, 'logo');
+  },
+  update: function () {
+  }
+}
+```
+
+#### Moyen jeu
+
+Le fichier `game.js` ressemblera à ceci
+
+```
+bootState = {
+  init: function() {
+    game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    game.scale.pageAlignHorizontally = true;
+    game.scale.pageAlignVertically = true;
+  },
+  preload: function() {
+    game.load.image('progressBar', 'assets/sprites/preloader.png'),
+    game.load.image('progressBarBg', 'assets/sprites/preloaderbg.png'),
+    game.load.image('loader', 'assets/sprites/loader.png')
+  },
+  create: function() {
+    game.state.start('load')
+  }
+},
+loadState = {
+    preload: function() {
+      var a = game.add.image(game.world.centerX, game.world.centerY, 'loader');
+      a.anchor.setTo(.5, .5);
+      var b = game.add.sprite(game.world.centerX, game.world.centerY + 50, 'progressBarBg');
+      b.anchor.setTo(.5, .5);
+      var c = game.add.sprite(game.world.centerX, game.world.centerY + 50, 'progressBar');
+      c.anchor.setTo(.5, .5),
+      game.load.setPreloadSprite(c),
+
+      game.load.image('logo', 'assets/sprites/phaser2.png');
+
+    },
+    create: function() {
+      game.state.start('play')
+    }
+  },
+playState = {
+  create: function(){
+
+  },
+  update: function(){
+
+  }
+};
+
+game = new Phaser.Game(320, 640);
+
+game.state.add('boot', bootState);
+game.state.add('load', loadState);
+game.state.add('play', playState);
+
+game.state.start('boot');
+```
+
+#### Grand jeu
+
+Ici, je ne veux tout simplement pas mentir. Je n’ai pas encore travaillé sur une telle chose, mais j’ai donné un coup de pied oblique dans le code de Five Nations, un jeu dont j’ai une copie sur mon github avant qu’il ne devienne privé, juste Pensez aux types de jeux "quelque chose.io".
+
+![Five Nations](images/five-nations.png)

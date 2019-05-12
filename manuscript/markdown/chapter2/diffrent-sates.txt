@@ -1,0 +1,51 @@
+## Quelle est la meilleur manière de définir un état
+
+### Problème
+
+Vous avez commencé à coder avec des états et vous ne savez pas quel est le meilleur moyen de le coder
+
+### Solution
+
+La première méthode est celle qui utilise la méthodologie de prototypage javascript
+
+```
+var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'myGame');
+var myGame = {};
+myGame.Play = function(game){};
+myGame.Play.prototype = {
+  preload: function () {
+    this.load.image('dude', 'assets/sprites/phaser-dude.png');
+  },
+  create: function () {
+    this.add.image(0, 0, 'dude');
+  },
+  update: function () {
+
+  }
+}
+game.state.add('play', BasicGame.Play);
+game.state.start('play');
+```
+
+La deuxième manière est plus codée comme dans le standard Phaser CE
+
+```
+var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'myGame');
+
+menuState = function(){
+};
+
+menuState.prototype = Object.create(menuState.prototype);
+menuState.prototype.constructor = menuState;
+
+menuState.prototype.preload = function() {
+  this.load.image('dude', 'assets/sprites/phaser-dude.png');
+};
+
+playState.prototype.create = function(){
+  this.add.image(0, 0, 'dude');
+};??
+
+game.state.add('menu', menuState);
+game.state.start('menu');
+```
