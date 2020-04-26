@@ -1,3 +1,7 @@
+# Niveau 3 : Cordon Bleu
+
+Dans ce dernier chapitre, nous examinerons des expériences plus complexes, mais pas sur JavaScript lui même, nous allons continuer à nous concentrer sur Phaser CE.
+
 ## Comment créer une animation avec un Atlas Json Array
 
 ### Problème
@@ -28,4 +32,4 @@ Ajouter l'animation dans la fonction create
   anim.play(10, true);
 ```
 
-![Mortal Combat](images/raiden.png)
+![Mortal Combat](manuscript/images/raiden.png)

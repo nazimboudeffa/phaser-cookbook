@@ -1,3 +1,31 @@
+# Niveau 2 : Medium
+
+Ce chapitre traitera des États, de la création d’un jeu Tilemap et d’un jeu à multiniveaux. Nous allons prendre Zelda et le jeu de Phaser CE comme exemple élémentaire.
+
+## Qu'est-ce qu'un état
+
+### Problème
+
+Vous voulez définir un jeu minimal qui pourra être etendu plus tard
+
+### Solution
+
+Vous aurez besoin de définir un état, c'est ce à quoi il ressemble et nous utiliserons cette fonctionnalité tout au long du livre
+
+```
+var game = new Phaser.Game(640, 360);
+var playState = {
+  preload : function() {
+    this.load.image('dude', 'assets/sprites/phaser-dude.png');
+  },
+  create : function(){
+    this.add.image(0, 0, 'dude');
+  }
+};
+game.state.add('play', playState);
+game.state.start('play');
+```
+
 ## Quelle est la meilleur manière de définir un état
 
 ### Problème

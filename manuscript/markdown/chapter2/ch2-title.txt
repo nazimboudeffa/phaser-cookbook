@@ -1,3 +1,0 @@
-# Niveau 2 : Medium
-
-Ce chapitre traitera des États, de la création d’un jeu Tilemap et d’un jeu à multiniveaux. Nous allons prendre Zelda et le jeu de Phaser CE comme exemple élémentaire.

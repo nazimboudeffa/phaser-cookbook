@@ -1,3 +1,0 @@
-# Niveau 1 : Script Kiddie
-
-Ce chapitre explique les fonctionnalités de base de Phaser CE, comment ajouter un sprite, une image, du texte et des sons, puis comment déplacer un sprite et de nombreux autres problèmes
