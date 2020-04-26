@@ -32,4 +32,4 @@ Ajouter l'animation dans la fonction create
   anim.play(10, true);
 ```
 
-![Mortal Combat](manuscript/images/raiden.png)
+![Mortal Combat](images/raiden.png)

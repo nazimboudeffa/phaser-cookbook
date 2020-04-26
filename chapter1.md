@@ -12,11 +12,11 @@ Vous voulez créer une page html et afficher une image avec laquelle jouer
 
 Une page HTML de base avec Phaser CE est une page `index.html` où vous ajoutez une balise de script avec la source pointant vers `phaser.min.js`
 
-![index.html in atom editor](manuscript/images/basic-game-atom.png)
+![index.html in atom editor](images/basic-game-atom.png)
 
-![game.js in atom editor](manuscript/images/basic-game-script.png)
+![game.js in atom editor](images/basic-game-script.png)
 
-![result in browser](manuscript/images/basic-game-firefox.png)
+![result in browser](images/basic-game-firefox.png)
 
 ## Comment ajouter une image
 
@@ -192,4 +192,4 @@ game.state.start('boot');
 
 Ici, je ne veux tout simplement pas mentir. Je n’ai pas encore travaillé sur une telle chose, mais j’ai donné un coup de pied oblique dans le code de Five Nations, un jeu dont j’ai une copie sur mon github avant qu’il ne devienne privé, juste Pensez aux types de jeux "quelque chose.io".
 
-![Five Nations](manuscript/images/five-nations.png)
+![Five Nations](images/five-nations.png)
