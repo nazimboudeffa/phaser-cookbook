@@ -1,6 +1,6 @@
 ---
 title: Guide du Codeur Phaser - Street Fighter
-author: Jacques Aïssa
+author: Nazim Boudeffa
 rights:  CC BY-NC-SA 3.0
 ---
 
