@@ -1,4 +1,4 @@
-# Phaser Cookbook (the original edition) by Jaques Aïssa
+# Phaser Cookbook (the original edition)
 
 The original **Phaser Cookbook** is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License][license]. You are free:
 
