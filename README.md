@@ -1,5 +1,7 @@
 # Phaser Cookbook (the original edition)
 
+<img src="cookbook/images/title_page.png" width=300">
+
 The original **Phaser Cookbook** is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License][license]. You are free:
 
 * to Share—to copy, distribute and transmit the work
