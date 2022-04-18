@@ -2,6 +2,12 @@
 
 <img src="cookbook/images/title_page.png" width="300">
 
+This book is divided into parts
+
+* The Phaser CookBook
+* A Guide on Making Street Fighter II
+* How to Build Phaser from Scratch
+
 ### license & copyright
 
 The original **Phaser Cookbook** is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License][license]. You are free:
